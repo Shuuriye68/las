@@ -1,0 +1,127 @@
+.contener{
+    width: 200px;
+margin-top: 1%;
+}
+.img img{
+    width: 150px;
+    margin-bottom: 7%;
+    
+}
+
+.hall{
+    display: flex;
+   justify-content: space-around;
+   gap: 30px;
+   flex-wrap: wrap;
+}
+.left{
+    width: 500px;
+}
+.right img{
+    width: 400px;
+    margin-top: 25%;
+}
+
+.btn{
+    display: flex;
+    gap: 30px;
+}
+
+.btnum{
+    padding: 5px 30px ;
+    border: solid 2px chocolate;
+    background-color: transparent;
+}
+.btn p{
+    color: gray;
+}
+
+.btn2{
+     display: flex;
+    gap: 30px; 
+    margin-left: 20px;
+    margin-top: 10px;
+     color: gray;
+}
+
+.btn4{
+    display: flex;
+    gap: 30px;
+}
+.Buy{
+     padding: 5px 30px ;
+     background-color: red;
+     color: white;
+     border: none;
+}
+
+
+
+/* ----------- Screen-ka ilaa 768px (ipad-yo & tablets portrait) ----------- */
+@media (max-width: 768px) {
+  /* Sawirada yar yar ee hore waxay noqdaan kuwo ka yar */
+  .img img {
+    width: 120px;
+  }
+
+  /* Sawirka weyn ee midig waa la yareeyaa */
+  .right img {
+    width: 250px;
+  }
+
+  /* Buttons-ka cabirkooda ayaa la yaraynayaa */
+  .btnum {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+
+  .Buy {
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ----------- Screen-ka ilaa 480px (mobilo yar yar) ----------- */
+@media (max-width: 480px) {
+  /* Sawirada yar yar aad bay u yaraanayaan */
+  .img img {
+    width: 260px;
+    margin-left: -18%;
+  }
+
+  /* Sawirka weyn ee midig aad ayuu u yaraanayaa */
+  .right img {
+   width: 260px;
+    margin-left: -7%;
+  }
+
+  /* Cinwaannada weyn (title-yada) waa la dhimaa si ay ugu habboonaadaan shaashadda */
+    .left p{
+         margin-left: 20px;
+    }
+  .left h1 {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+
+  .btn3 h1 {
+    font-size: 20px;
+     margin-left: 20px;
+  }
+  .btn3 h3 {
+    font-size: 20px;
+     margin-left: 20px;
+  }
+
+  /* Buttons-ka quantity-ka ee "+" "-" waxay helayaan spacing yar */
+  .btn4 {
+    gap: 10px;
+     margin-left: 10px;
+  }
+
+  /* "+" "-" iyo count-ka font-kiisa waa la yareeyaa si ay shaashadda ugu habboonaadaan */
+  #plus, #minus, #conter {
+    font-size: 20px;
+  }
+}
+
